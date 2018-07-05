@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+PIZZAS:
+
+
+
+
+<ul>
+<hr>
+{% for pizza in pizzas %}
+    <li>{{ pizza.name }}</li>
+    <hr>
+{% endfor %}
+
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+INGREDIENTS:
+
+
+<ul>
+<hr>
+{% for commande in commandes %}
+
+    <li>Nom : {{ commande.nom }}</li>
+    <li>Adresse : {{ commande.adresse }}</li>
+    <li>Numero telephone : {{ commande.numt }}</li>
+    <hr>
+{% endfor %}
+
+</ul>
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+INGREDIENTS:
+
+
+<ul>
+<hr>
+{% for ingredient in ingredients %}
+
+    <li>{{ ingredient.name }}</li>
+    <hr>
+
+{% endfor %}
+
+</ul>
+
+
+{% endblock %}
